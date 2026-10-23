@@ -23,7 +23,7 @@ export const VslSection: React.FC = () => {
       const s = document.createElement('script');
       s.src = VTURB_SCRIPT_SRC;
       s.async = true;
-      s.dataset.vturbPlayer = 'true';
+      s.setAttribute('data-vturb-player', 'true');
       document.head.appendChild(s);
     }
   }, []);
