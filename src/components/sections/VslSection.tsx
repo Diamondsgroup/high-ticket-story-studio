@@ -34,6 +34,20 @@ export const VslSection: React.FC = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-purple-600/15 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+        {/* Copy de chamada para a VSL */}
+        <div className="text-center mb-6 sm:mb-8 px-1">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-white tracking-tight leading-snug">
+            Assista até o fim: vou abrir{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-300 to-violet-300">
+              minhas telas reais do TikTok Ads
+            </span>{' '}
+            e mostrar, na prática, onde está o ouro.
+          </h2>
+          <p className="text-slate-300 mt-3 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
+            Nada de teoria. Você vai ver os painéis, os gastos e os números por trás da estratégia que quase ninguém no Brasil conhece — e que pode mudar o rumo da sua operação.
+          </p>
+        </div>
+
         {/* Player VTurb */}
         <div className="w-full rounded-2xl overflow-hidden border border-purple-500/30 shadow-[0_10px_50px_rgba(168,85,247,0.25)] bg-black">
           <div ref={playerRef} className="w-full" />
