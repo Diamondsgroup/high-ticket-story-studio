@@ -12,6 +12,7 @@ import imgNeon from '../../assets/lifestyle-neon.png.asset.json';
 import imgChinatown from '../../assets/lifestyle-chinatown.png.asset.json';
 import imgPalermo from '../../assets/lifestyle-palermo.png.asset.json';
 import imgPortugal from '../../assets/lifestyle-portugal.png.asset.json';
+import imgCalistenia from '../../assets/lifestyle-calistenia.png.asset.json';
 
 const photos = [
   { src: imgVistaCidade.url, alt: 'Trabalhando com vista para a cidade', label: 'Escritório com vista' },
@@ -23,6 +24,7 @@ const photos = [
   { src: imgNeve.url, alt: 'Dia de neve no exterior', label: 'Neve' },
   { src: imgNeon.url, alt: 'Rua de neon à noite na Ásia', label: 'Chinatown — Bangkok' },
   { src: imgMadri.url, alt: 'Noite em Madri', label: 'Centro de Madri' },
+  { src: imgCalistenia.url, alt: 'Treino de calistenia em praça de Madri', label: 'Calistenia — Madri' },
   { src: img7Eleven.url, alt: '7-Eleven à noite na Tailândia', label: 'Tailândia' },
   { src: imgCachorro.url, alt: 'Explorando a cidade', label: 'Explorando o mundo' },
 ];
