@@ -9,11 +9,17 @@ import imgEstadio from '../../assets/lifestyle-estadio.png.asset.json';
 import imgCachorro from '../../assets/lifestyle-cachorro.png.asset.json';
 import imgBangkok from '../../assets/lifestyle-bangkok.png.asset.json';
 import imgNeon from '../../assets/lifestyle-neon.png.asset.json';
+import imgChinatown from '../../assets/lifestyle-chinatown.png.asset.json';
+import imgPalermo from '../../assets/lifestyle-palermo.png.asset.json';
+import imgPortugal from '../../assets/lifestyle-portugal.png.asset.json';
 
 const photos = [
   { src: imgVistaCidade.url, alt: 'Trabalhando com vista para a cidade', label: 'Escritório com vista' },
+  { src: imgChinatown.url, alt: 'Noite em Chinatown', label: 'Chinatown' },
   { src: imgBangkok.url, alt: 'Explorando Bangkok', label: 'Bangkok, Tailândia' },
+  { src: imgPortugal.url, alt: 'Noite em Lisboa, Portugal', label: 'Portugal' },
   { src: imgEstadio.url, alt: 'Jogo no Santiago Bernabéu', label: 'Madri, Espanha' },
+  { src: imgPalermo.url, alt: 'Noite em Palermo, Buenos Aires', label: 'Palermo — Buenos Aires' },
   { src: imgNeve.url, alt: 'Dia de neve no exterior', label: 'Neve' },
   { src: imgNeon.url, alt: 'Rua de neon à noite na Ásia', label: 'Chinatown — Bangkok' },
   { src: imgMadri.url, alt: 'Noite em Madri', label: 'Centro de Madri' },
