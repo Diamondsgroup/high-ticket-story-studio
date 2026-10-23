@@ -50,7 +50,7 @@ const VideoCard: React.FC<{ item: Item }> = ({ item }) => {
     window.addEventListener(PAUSE_ALL, onOther);
     const v = ref.current;
     const io = new IntersectionObserver(
-      ([en]) => { if (!en.isIntersecting) v?.pause(); },
+      ([en]) => { if (en && !en.isIntersecting) v?.pause(); },
       { threshold: 0.2 },
     );
     if (v) io.observe(v);
