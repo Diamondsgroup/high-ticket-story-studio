@@ -12,6 +12,7 @@ import imgNeon from '../../assets/lifestyle-neon.png.asset.json';
 import imgChinatown from '../../assets/lifestyle-chinatown.png.asset.json';
 import imgPalermo from '../../assets/lifestyle-palermo.png.asset.json';
 import imgPortugal from '../../assets/lifestyle-portugal.png.asset.json';
+import imgCalistenia from '../../assets/lifestyle-calistenia.png.asset.json';
 
 const photos = [
   { src: imgVistaCidade.url, alt: 'Trabalhando com vista para a cidade', label: 'Escritório com vista' },
