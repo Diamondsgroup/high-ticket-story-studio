@@ -1,12 +1,12 @@
 import React from 'react';
 import { siteContent } from '../../config/siteContent';
-import { TrendingUp, Zap, Flame, Eye } from 'lucide-react';
+import { Flame } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   const { hero } = siteContent;
 
   return (
-    <section className="relative min-h-[92vh] flex items-center overflow-hidden pt-6 pb-10 sm:pt-8 sm:pb-12 md:py-16 px-4 sm:px-6 lg:px-12 bg-[#020205]">
+    <section className="relative flex items-center overflow-hidden pt-6 pb-6 sm:pt-8 sm:pb-8 md:py-12 px-4 sm:px-6 lg:px-12 bg-[#020205]">
 
       {/* 
         BACKGROUND GRAPHIC RESPONSIVO:
@@ -44,7 +44,7 @@ export const HeroSection: React.FC = () => {
       <div className="absolute bottom-10 left-1/4 w-[350px] sm:w-[400px] h-[300px] bg-fuchsia-600/10 rounded-full blur-[140px] pointer-events-none" />
 
       {/* Container de Conteúdo: espaçamento calculado para que o topo exiba o rosto e o texto flua naturalmente logo abaixo */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-start text-left pt-52 sm:pt-0">
+      <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-start text-left pt-48 sm:pt-0">
 
         {/* Top Logo */}
         <div className="mb-4 sm:mb-8 transform transition hover:scale-105 duration-300">
@@ -73,26 +73,6 @@ export const HeroSection: React.FC = () => {
           {hero.heading.suffix}
         </h1>
 
-        {/* Subtitle */}
-        <p className="text-sm sm:text-base md:text-lg text-slate-200 max-w-xl lg:max-w-2xl leading-relaxed mb-6 sm:mb-8 font-normal drop-shadow-md">
-          {hero.subheading}
-        </p>
-
-        {/* Highlights Bar: 3 cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-4 pt-5 sm:pt-6 border-t border-purple-900/40 w-full max-w-xl lg:max-w-2xl">
-          <div className="flex items-center gap-3 text-slate-200 bg-[#0a0414]/80 backdrop-blur-md p-3 sm:p-3.5 rounded-xl border border-purple-500/30 shadow-sm">
-            <Eye className="w-5 h-5 text-purple-400 shrink-0" />
-            <span className="text-xs sm:text-sm font-semibold">{hero.highlights?.[0]?.text ?? "CAC até 10x Menor que na Meta"}</span>
-          </div>
-          <div className="flex items-center gap-3 text-slate-200 bg-[#0a0414]/80 backdrop-blur-md p-3 sm:p-3.5 rounded-xl border border-fuchsia-500/30 shadow-sm">
-            <TrendingUp className="w-5 h-5 text-fuchsia-400 shrink-0" />
-            <span className="text-xs sm:text-sm font-semibold">{hero.highlights?.[1]?.text ?? "Leilão Virgem & Sem Saturação"}</span>
-          </div>
-          <div className="flex items-center gap-3 text-slate-200 bg-[#0a0414]/80 backdrop-blur-md p-3 sm:p-3.5 rounded-xl border border-violet-500/30 shadow-sm">
-            <Zap className="w-5 h-5 text-violet-400 shrink-0" />
-            <span className="text-xs sm:text-sm font-semibold">{hero.highlights?.[2]?.text ?? "Melhor plataforma atualmente do mercado!"}</span>
-          </div>
-        </div>
       </div>
     </section>
   );

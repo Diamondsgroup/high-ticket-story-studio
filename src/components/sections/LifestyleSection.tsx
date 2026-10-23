@@ -7,7 +7,7 @@ export const LifestyleSection: React.FC = () => {
   if (!lifestyle) return null;
 
   return (
-    <section className="relative py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-[#020205] text-white overflow-hidden border-t border-purple-950/40">
+    <section className="relative py-8 sm:py-12 px-4 sm:px-6 lg:px-8 bg-[#020205] text-white overflow-hidden border-t border-purple-950/40">
       {/* Luzes de ambientação sutis */}
       <div className="absolute top-1/4 left-1/4 w-[350px] sm:w-[500px] h-[250px] sm:h-[350px] bg-purple-600/15 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-10 right-1/4 w-[300px] sm:w-[450px] h-[200px] sm:h-[300px] bg-fuchsia-600/10 rounded-full blur-[130px] pointer-events-none" />
