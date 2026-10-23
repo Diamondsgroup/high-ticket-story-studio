@@ -103,7 +103,7 @@ export const siteContent = {
     heading: {
       prefix: "Veja os ",
       highlight: "resultados",
-      suffix: " de quem já surfou a nova onda do TikTok Ads com a Tokfly",
+      suffix: " de quem já surfou a nova onda do TikTok Ads com o Movimento A Contramão",
     },
     globeImage: "/images/globe-neon.png",
     images: [
