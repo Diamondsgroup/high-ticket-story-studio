@@ -12,6 +12,14 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { initMetaPixel } from "../lib/metaPixel";
+
+function MetaPixelInit() {
+  useEffect(() => {
+    void initMetaPixel();
+  }, []);
+  return null;
+}
 
 function NotFoundComponent() {
   return (
@@ -120,6 +128,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <MetaPixelInit />
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
     </QueryClientProvider>

@@ -22,10 +22,19 @@ export const FooterSection: React.FC = () => {
         </div>
 
         {/* Legal Disclaimer */}
-        <p className="text-xs text-slate-500 max-w-2xl leading-relaxed mb-6 font-normal">
+        <p className="text-xs text-slate-500 max-w-2xl leading-relaxed mb-4 font-normal">
           Este site não possui vínculo institucional com o TikTok, ByteDance ou com a Meta Inc.
           Os resultados apresentados dependem da aplicação consistente da metodologia, do produto e do mercado de atuação de cada operador.
         </p>
+
+        {/* Privacy policy link */}
+        <a
+          href="/privacidade"
+          className="mb-6 text-xs text-slate-400 underline underline-offset-4 hover:text-purple-300 transition-colors"
+        >
+          Política de Privacidade
+        </a>
+
 
         {/* Copyright */}
         <div className="flex flex-col sm:flex-row items-center justify-between w-full pt-8 border-t border-purple-950/40 text-xs text-slate-500 gap-4">
