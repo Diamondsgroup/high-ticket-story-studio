@@ -84,7 +84,7 @@ export const ProvasSection: React.FC = () => {
   };
 
   return (
-    <section className="relative py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-[#020205] overflow-hidden select-none">
+    <section className="relative py-8 sm:py-12 px-4 sm:px-6 lg:px-8 bg-[#020205] overflow-hidden select-none">
       {/* Luzes dinâmicas de fundo em degradê */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-purple-600/15 via-fuchsia-600/10 to-transparent rounded-full blur-[160px] pointer-events-none" />
       <div className="absolute -bottom-10 right-10 w-[400px] h-[300px] bg-purple-600/10 rounded-full blur-[140px] pointer-events-none" />
@@ -94,7 +94,7 @@ export const ProvasSection: React.FC = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Cabeçalho com Globo Neon Decorativo */}
-        <div className="relative text-center mb-10 sm:mb-12">
+        <div className="relative text-center mb-8 sm:mb-10">
           {/* Globo Neon Holográfico Centralizado Atrás da Headline (Suavizado com máscara circular) */}
           {provas.globeImage && (
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] sm:w-[440px] md:w-[520px] lg:w-[560px] aspect-square pointer-events-none z-0 flex items-center justify-center">

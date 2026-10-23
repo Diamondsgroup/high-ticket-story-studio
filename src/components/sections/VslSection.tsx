@@ -29,13 +29,13 @@ export const VslSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative py-10 sm:py-14 px-4 sm:px-6 lg:px-8 bg-[#020205] overflow-hidden">
+    <section className="relative py-6 sm:py-10 px-4 sm:px-6 lg:px-8 bg-[#020205] overflow-hidden">
       {/* Luzes atmosféricas suaves */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-purple-600/15 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
         {/* Copy de chamada para a VSL */}
-        <div className="text-center mb-6 sm:mb-8 px-1">
+        <div className="text-center mb-5 sm:mb-6 px-1">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-white tracking-tight leading-snug">
             Assista até o fim: vou abrir{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-300 to-violet-300">
@@ -54,7 +54,7 @@ export const VslSection: React.FC = () => {
         </div>
 
         {/* CTA abaixo da VSL */}
-        <div className="flex flex-col items-center gap-2.5 w-full sm:w-auto mt-8 sm:mt-10">
+        <div className="flex flex-col items-center gap-2.5 w-full sm:w-auto mt-6 sm:mt-8">
           <CtaButton
             text={hero.cta.text}
             href={hero.cta.href}

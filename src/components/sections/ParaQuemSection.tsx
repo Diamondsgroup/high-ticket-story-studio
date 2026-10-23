@@ -1,9 +1,9 @@
 import React from 'react';
 import { siteContent } from '../../config/siteContent';
-import { CheckCircle2, Globe, ShoppingCart, Briefcase, ShieldAlert } from 'lucide-react';
+import { CheckCircle2, Globe, ShoppingCart, Briefcase, ShieldAlert, Eye, TrendingUp, Zap } from 'lucide-react';
 
 export const ParaQuemSection: React.FC = () => {
-  const { paraQuem } = siteContent;
+  const { paraQuem, hero } = siteContent;
 
   const icons = [
     <Globe key="1" className="w-6 h-6 text-purple-400" />,
@@ -32,6 +32,27 @@ export const ParaQuemSection: React.FC = () => {
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-fuchsia-600/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="relative z-10 max-w-5xl mx-auto">
+        {/* Texto de apoio vindo do bloco principal */}
+        <p className="text-sm sm:text-base md:text-lg text-slate-200 max-w-xl lg:max-w-2xl leading-relaxed font-normal text-center mx-auto mb-6 sm:mb-8">
+          {hero.subheading}
+        </p>
+
+        {/* Highlights: 3 cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-4 w-full max-w-3xl mx-auto mb-10 sm:mb-12">
+          <div className="flex items-center gap-3 text-slate-200 bg-[#0a0414]/80 backdrop-blur-md p-3 sm:p-3.5 rounded-xl border border-purple-500/30 shadow-sm">
+            <Eye className="w-5 h-5 text-purple-400 shrink-0" />
+            <span className="text-xs sm:text-sm font-semibold">{hero.highlights?.[0]?.text ?? "CAC até 10x Menor que na Meta"}</span>
+          </div>
+          <div className="flex items-center gap-3 text-slate-200 bg-[#0a0414]/80 backdrop-blur-md p-3 sm:p-3.5 rounded-xl border border-fuchsia-500/30 shadow-sm">
+            <TrendingUp className="w-5 h-5 text-fuchsia-400 shrink-0" />
+            <span className="text-xs sm:text-sm font-semibold">{hero.highlights?.[1]?.text ?? "Leilão Virgem & Sem Saturação"}</span>
+          </div>
+          <div className="flex items-center gap-3 text-slate-200 bg-[#0a0414]/80 backdrop-blur-md p-3 sm:p-3.5 rounded-xl border border-violet-500/30 shadow-sm">
+            <Zap className="w-5 h-5 text-violet-400 shrink-0" />
+            <span className="text-xs sm:text-sm font-semibold">{hero.highlights?.[2]?.text ?? "Melhor plataforma atualmente do mercado!"}</span>
+          </div>
+        </div>
+
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-4">

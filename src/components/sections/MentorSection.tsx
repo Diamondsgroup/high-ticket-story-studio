@@ -7,7 +7,7 @@ export const MentorSection: React.FC = () => {
   const { mentor } = siteContent;
 
   return (
-    <section className="relative py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-[#020205] overflow-hidden border-t border-purple-950/40">
+    <section className="relative py-8 sm:py-12 px-4 sm:px-6 lg:px-8 bg-[#020205] overflow-hidden border-t border-purple-950/40">
       {/* Background Graphic com cyber tint suave */}
       <div
         className="absolute inset-0 opacity-10 pointer-events-none bg-cover bg-center mix-blend-screen filter hue-rotate-180"
@@ -20,7 +20,7 @@ export const MentorSection: React.FC = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Cabeçalho da Seção */}
-        <div className="text-center mb-10 sm:mb-12">
+        <div className="text-center mb-8 sm:mb-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-semibold uppercase tracking-wider mb-4 shadow-[0_0_15px_rgba(168,85,247,0.2)]">
             <Compass className="w-3.5 h-3.5" />
             Liderança & Mentoria
