@@ -1,13 +1,12 @@
 import React from 'react';
 import { siteContent } from '../../config/siteContent';
-import { CtaButton } from '../common/CtaButton';
-import { ShieldCheck, TrendingUp, Sparkles, Flame, Eye } from 'lucide-react';
+import { TrendingUp, Zap, Flame, Eye } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   const { hero } = siteContent;
 
   return (
-    <section className="relative min-h-[92vh] flex items-center overflow-hidden pt-6 pb-12 sm:pt-8 sm:pb-16 md:py-24 px-4 sm:px-6 lg:px-12 bg-[#020205]">
+    <section className="relative min-h-[92vh] flex items-center overflow-hidden pt-6 pb-10 sm:pt-8 sm:pb-12 md:py-16 px-4 sm:px-6 lg:px-12 bg-[#020205]">
 
       {/* 
         BACKGROUND GRAPHIC RESPONSIVO:
@@ -79,19 +78,6 @@ export const HeroSection: React.FC = () => {
           {hero.subheading}
         </p>
 
-        {/* CTA Button */}
-        <div className="flex flex-col items-start gap-2.5 w-full sm:w-auto mb-8 sm:mb-10">
-          <CtaButton
-            text={hero.cta.text}
-            href={hero.cta.href}
-            size="lg"
-            className="w-full sm:w-auto justify-center"
-          />
-          <span className="text-xs text-slate-300 tracking-wide flex items-center gap-1.5 mt-1 font-medium">
-            <ShieldCheck className="w-4 h-4 text-purple-400 shrink-0" /> Aplicação sujeita à aprovação!
-          </span>
-        </div>
-
         {/* Highlights Bar: 3 cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-4 pt-5 sm:pt-6 border-t border-purple-900/40 w-full max-w-xl lg:max-w-2xl">
           <div className="flex items-center gap-3 text-slate-200 bg-[#0a0414]/80 backdrop-blur-md p-3 sm:p-3.5 rounded-xl border border-purple-500/30 shadow-sm">
@@ -103,7 +89,7 @@ export const HeroSection: React.FC = () => {
             <span className="text-xs sm:text-sm font-semibold">{hero.highlights?.[1]?.text ?? "Leilão Virgem & Sem Saturação"}</span>
           </div>
           <div className="flex items-center gap-3 text-slate-200 bg-[#0a0414]/80 backdrop-blur-md p-3 sm:p-3.5 rounded-xl border border-violet-500/30 shadow-sm">
-            <Sparkles className="w-5 h-5 text-violet-400 shrink-0" />
+            <Zap className="w-5 h-5 text-violet-400 shrink-0" />
             <span className="text-xs sm:text-sm font-semibold">{hero.highlights?.[2]?.text ?? "Melhor plataforma atualmente do mercado!"}</span>
           </div>
         </div>

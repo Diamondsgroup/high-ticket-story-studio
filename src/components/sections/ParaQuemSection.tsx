@@ -20,7 +20,7 @@ export const ParaQuemSection: React.FC = () => {
   ];
 
   return (
-    <section className="relative py-24 px-4 sm:px-6 lg:px-8 bg-[#020205] overflow-hidden">
+    <section className="relative py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-[#020205] overflow-hidden">
       {/* Background Graphic overlay with cyber tint */}
       <div
         className="absolute inset-0 pointer-events-none opacity-10 bg-cover bg-center mix-blend-screen filter hue-rotate-180"
@@ -33,7 +33,7 @@ export const ParaQuemSection: React.FC = () => {
 
       <div className="relative z-10 max-w-5xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-4">
             {paraQuem.heading.prefix}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-300 to-violet-300">

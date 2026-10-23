@@ -20,14 +20,14 @@ export const PorQueEuropaSection: React.FC = () => {
   ];
 
   return (
-    <section className="relative py-24 px-4 sm:px-6 lg:px-8 bg-[#020205] overflow-hidden">
+    <section className="relative py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-[#020205] overflow-hidden">
       {/* Ambient background glows */}
       <div className="absolute top-1/4 left-10 w-96 h-96 bg-purple-600/15 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-fuchsia-600/10 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Section Heading */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight">
             {porQueEuropa.heading.prefix}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-300 to-violet-300">
@@ -37,7 +37,7 @@ export const PorQueEuropaSection: React.FC = () => {
         </div>
 
         {/* 4 Motivos Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 mb-10">
           {porQueEuropa.motivos.map((motivo, idx) => (
             <div
               key={motivo.number}
