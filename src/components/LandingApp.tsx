@@ -4,6 +4,7 @@ import { VslSection } from './sections/VslSection';
 import { ParaQuemSection } from './sections/ParaQuemSection';
 import { PorQueEuropaSection } from './sections/PorQueEuropaSection';
 import { ProvasSection } from './sections/ProvasSection';
+import { VideoProvasSection } from './sections/VideoProvasSection';
 import { MentorSection } from './sections/MentorSection';
 import { LifestyleSection } from './sections/LifestyleSection';
 import { FooterSection } from './sections/FooterSection';
@@ -17,6 +18,7 @@ export const App: React.FC = () => {
         <ParaQuemSection />
         <PorQueEuropaSection />
         <ProvasSection />
+        <VideoProvasSection />
         <MentorSection />
         <LifestyleSection />
       </main>
