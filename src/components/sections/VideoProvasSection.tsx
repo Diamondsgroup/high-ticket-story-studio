@@ -26,11 +26,11 @@ const items: Item[] = [
     src: v2.url,
     poster: p2.url,
     tag: 'Painel TikTok Ads',
-    title: 'Uma campanha. Escala real.',
+    title: 'Uma única campanha. Escala real.',
     stats: [
       { label: 'Orçamento / dia', value: '€7.000' },
       { label: 'CPA médio', value: '~€10', accent: true },
-      { label: 'Campanha', value: '1 só' },
+      { label: 'Campanhas ativas', value: '1 só' },
     ],
   },
 ];
