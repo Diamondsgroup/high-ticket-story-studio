@@ -17,6 +17,12 @@ export const CtaButton: React.FC<CtaButtonProps> = ({
   return (
     <a
       href={href}
+      onClick={(e) => {
+        if (href === '#aplicar') {
+          e.preventDefault();
+          window.dispatchEvent(new CustomEvent('open-qualification-form'));
+        }
+      }}
       {...(href.startsWith('#') ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
       className={`inline-flex items-center justify-center gap-3 font-black uppercase tracking-wider rounded-2xl transition-all duration-300 transform hover:scale-[1.03] active:scale-[0.98] cursor-pointer ${
         size === 'lg'
