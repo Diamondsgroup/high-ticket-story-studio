@@ -32,7 +32,7 @@ export const MultiStepForm: React.FC<{ onClose: () => void }> = ({ onClose }) =>
     };
   }, [onClose]);
 
-  const q = formQuestions[step];
+  const q = formQuestions[step]!;
   const total = formQuestions.length;
   const value = values[q.id] ?? '';
 
