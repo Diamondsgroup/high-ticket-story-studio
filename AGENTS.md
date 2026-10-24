@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep qualification on the dedicated `/aplicar` TanStack route and centralize CTA destinations in siteContent; this prevents embedded or modal forms from returning to the sales page.
