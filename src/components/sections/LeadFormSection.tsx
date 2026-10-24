@@ -42,13 +42,18 @@ export const LeadFormSection: React.FC = () => {
     setStatus('sending');
     const eventId = `lead-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
     try {
-      const body = new URLSearchParams({
+      const body = JSON.stringify({
         ...parsed.data,
         instagram: parsed.data.instagram ?? '',
         data: new Date().toISOString(),
         origem: window.location.href,
       });
-      await fetch(ENDPOINT, { method: 'POST', mode: 'no-cors', body });
+      await fetch(ENDPOINT, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body,
+      });
       trackLead(eventId);
       setStatus('ok');
     } catch {
