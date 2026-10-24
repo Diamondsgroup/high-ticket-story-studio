@@ -1,6 +1,7 @@
 import React from 'react';
 import { HeroSection } from './sections/HeroSection';
 import { VslSection } from './sections/VslSection';
+import { LeadFormSection } from './sections/LeadFormSection';
 import { ParaQuemSection } from './sections/ParaQuemSection';
 import { PorQueEuropaSection } from './sections/PorQueEuropaSection';
 import { ProvasSection } from './sections/ProvasSection';
@@ -15,6 +16,7 @@ export const App: React.FC = () => {
       <main className="flex-grow">
         <HeroSection />
         <VslSection />
+        <LeadFormSection />
         <ParaQuemSection />
         <PorQueEuropaSection />
         <ProvasSection />
