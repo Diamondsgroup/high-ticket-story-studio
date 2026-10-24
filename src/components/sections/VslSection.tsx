@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from 'react';
+import { CtaButton } from '../common/CtaButton';
+import { siteContent } from '../../config/siteContent';
 
 const VTURB_PLAYER_HTML =
   '<vturb-smartplayer id="vid-6adabaf24e1a50542a65fb5b" style="display:block;margin:0 auto;width:100%;">' +
@@ -48,7 +50,9 @@ export const VslSection: React.FC = () => {
         <div className="w-full rounded-2xl overflow-hidden border border-purple-500/30 shadow-[0_10px_50px_rgba(168,85,247,0.25)] bg-black">
           <div ref={playerRef} className="w-full" />
         </div>
-
+        <div className="mt-5 flex w-full justify-center">
+          <CtaButton text={siteContent.hero.cta.text} href={siteContent.hero.cta.href} />
+        </div>
       </div>
     </section>
   );

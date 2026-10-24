@@ -4,7 +4,11 @@ import { Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/privacidade")({
   head: () => ({
     meta: [
-      { title: "Política de Privacidade" },
+      { title: "Política de Privacidade | Movimento A Contramão" },
+      { property: 'og:title', content: 'Política de Privacidade | Movimento A Contramão' },
+      { property: 'og:description', content: 'Saiba como o Movimento A Contramão trata dados de visitantes e aplicações.' },
+      { property: 'og:type', content: 'website' },
+      { name: 'twitter:card', content: 'summary_large_image' },
       {
         name: "description",
         content:
