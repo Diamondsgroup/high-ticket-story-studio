@@ -88,3 +88,10 @@ export function initMetaPixel(): Promise<boolean> {
   }
   return initPromise;
 }
+
+/** Dispara o evento Lead (só se o Pixel carregou nesta região). */
+export async function trackLead(eventId: string) {
+  if (typeof window === "undefined") return;
+  const ok = await initMetaPixel();
+  if (ok) window.fbq?.("track", "Lead", {}, { eventID: eventId });
+}

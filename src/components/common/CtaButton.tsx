@@ -17,8 +17,7 @@ export const CtaButton: React.FC<CtaButtonProps> = ({
   return (
     <a
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      {...(href.startsWith('#') ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
       className={`inline-flex items-center justify-center gap-3 font-black uppercase tracking-wider rounded-2xl transition-all duration-300 transform hover:scale-[1.03] active:scale-[0.98] cursor-pointer ${
         size === 'lg'
           ? 'px-9 py-5 text-lg md:text-xl min-w-[280px] sm:min-w-[340px]'

@@ -1,5 +1,5 @@
 // Link central de conversão da Tokfly (Insira aqui o link do seu Typeform, Tally, WhatsApp ou formulário)
-const CTA_URL = "https://wa.me/"; 
+const CTA_URL = "#aplicar";
 
 export const siteContent = {
   meta: {
