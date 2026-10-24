@@ -1,7 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { siteContent } from '../../config/siteContent';
-import { CtaButton } from '../common/CtaButton';
-import { ShieldCheck } from 'lucide-react';
 
 const VTURB_PLAYER_HTML =
   '<vturb-smartplayer id="vid-6adabaf24e1a50542a65fb5b" style="display:block;margin:0 auto;width:100%;">' +
@@ -12,7 +9,6 @@ const VTURB_SCRIPT_SRC =
   'https://scripts.converteai.net/edb83c2d-fdbb-4547-8abd-203223d1fc8d/players/6adabaf24e1a50542a65fb5b/v4/player.js';
 
 export const VslSection: React.FC = () => {
-  const { hero } = siteContent;
   const playerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -53,18 +49,6 @@ export const VslSection: React.FC = () => {
           <div ref={playerRef} className="w-full" />
         </div>
 
-        {/* CTA abaixo da VSL */}
-        <div className="flex flex-col items-center gap-2.5 w-full sm:w-auto mt-6 sm:mt-8">
-          <CtaButton
-            text={hero.cta.text}
-            href={hero.cta.href}
-            size="lg"
-            className="w-full sm:w-auto justify-center"
-          />
-          <span className="text-xs text-slate-300 tracking-wide flex items-center gap-1.5 mt-1 font-medium">
-            <ShieldCheck className="w-4 h-4 text-purple-400 shrink-0" /> Aplicação sujeita à aprovação!
-          </span>
-        </div>
       </div>
     </section>
   );
