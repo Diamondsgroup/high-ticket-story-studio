@@ -42,7 +42,7 @@ export const MultiStepForm: React.FC<Props> = ({ onClose, variant = 'modal' }) =
   const q = formQuestions[step]!;
   const total = formQuestions.length;
   const value = values[q.id] ?? '';
-  const firstName = (values.nome ?? '').trim().split(' ')[0];
+  const firstName = (values['nome'] ?? '').trim().split(' ')[0];
 
   const submit = async (all: Record<string, string>) => {
     setStatus('sending');
